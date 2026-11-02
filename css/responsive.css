@@ -1,0 +1,76 @@
+@media (max-width: 1050px) {
+  .primary-nav { gap: 16px; }
+  .primary-nav a { font-size: 11px; }
+  .hero { min-height: 620px; gap: 4%; }
+  .product-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 40px 20px; }
+  .about-layout { gap: 8%; }
+  .about-images { min-height: 520px; }
+  .about-image-main { height: 470px; }
+}
+@media (max-width: 760px) {
+  html { scroll-padding-top: 72px; }
+  .container { width: min(100% - 40px, var(--container)); }
+  .site-header, .site-header.is-scrolled { height: 72px; }
+  .header-inner { gap: 8px; }
+  .brand-name { font-size: 19px; }
+  .menu-toggle { display: grid; order: 3; margin-left: 2px; }
+  .cart-trigger { margin-left: auto; }
+  .primary-nav { position: absolute; top: 72px; left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 20px 20px; background: var(--blanco); border-top: 1px solid var(--line); }
+  .primary-nav.is-open { display: flex; }
+  .primary-nav a { min-height: 46px; display: flex; align-items: center; border-bottom: 1px solid #eeece8; font-size: 13px; }
+  .hero { min-height: 0; grid-template-columns: 1fr; gap: 0; padding: 72px 20px 38px; }
+  .hero-copy { padding: 72px 0 34px; }
+  .hero h1 { font-size: clamp(50px, 12vw, 72px); }
+  .hero-description { max-width: 400px; }
+  .hero-visual { height: min(112vw, 580px); min-height: 350px; margin-inline: 8%; }
+  .hero-note { right: -24px; bottom: 24px; font-size: 13px; }
+  .hero-index { display: none; }
+  .section { padding-block: 76px; }
+  .section-heading { align-items: flex-start; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+  .section-intro { max-width: 400px; }
+  .product-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px 14px; }
+  .product-name { font-size: 15px; }
+  .product-meta { align-items: flex-start; gap: 3px; }
+  .product-details { padding-left: 5px; font-size: 9px; }
+  .catalog-controls { align-items: stretch; flex-direction: column; gap: 8px; }
+  .search-field, .sort-field { width: 100%; }
+  .filter-row { gap: 3px; }
+  .filter-button { min-height: 40px; padding-inline: 11px; }
+  .about-layout { grid-template-columns: 1fr; gap: 58px; }
+  .about-images { min-height: min(125vw, 530px); }
+  .about-image-main { width: 77%; height: min(110vw, 460px); }
+  .about-image-detail { height: min(66vw, 285px); }
+  .about-copy { max-width: 600px; }
+  .benefits-grid { grid-template-columns: repeat(2,1fr); gap: 30px 22px; }
+  .contact-section { grid-template-columns: 1fr; gap: 36px; }
+  .map-frame { height: 350px; }
+  .footer-main { grid-template-columns: repeat(2,1fr); gap: 34px 22px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-bottom { align-items: flex-start; flex-direction: column; justify-content: center; gap: 7px; padding-block: 15px; }
+  .product-modal { max-height: calc(100vh - 24px); grid-template-columns: 1fr; }
+  .modal-gallery { min-height: 0; height: min(72vw, 360px); grid-template-columns: 48px 1fr; padding: 16px; }
+  .thumbnail-button { width: 44px; height: 58px; }
+  .modal-info { padding: 24px; }
+  .modal-info h2 { font-size: 30px; }
+  .modal-close { top: 8px; right: 8px; }
+  .modal-backdrop { padding: 12px; }
+  .cart-drawer { padding: 22px 18px; }
+}
+@media (max-width: 420px) {
+  .container { width: calc(100% - 32px); }
+  .brand-name { font-size: 17px; }
+  .brand-caption { font-size: 8px; }
+  .hero { padding-inline: 16px; }
+  .hero h1 { font-size: 49px; }
+  .hero-actions .button { flex: 1; padding-inline: 12px; font-size: 10px; }
+  .product-grid { grid-template-columns: 1fr; gap: 32px; }
+  .product-name { font-size: 14px; }
+  .product-details { font-size: 0; }
+  .product-details::after { content: "Ver"; font-size: 10px; }
+  .benefits-grid { gap: 28px 14px; }
+  .benefit h3 { font-size: 15px; }
+  .whatsapp-float { right: 16px; bottom: 16px; width: 46px; height: 46px; }
+  .toast-region { right: 16px; bottom: 72px; }
+  .cart-item { grid-template-columns: 66px 1fr auto; gap: 10px; }
+  .cart-item img { width: 66px; height: 84px; }
+}
